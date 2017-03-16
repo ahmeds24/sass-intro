@@ -1,3 +1,13 @@
 // Modules and Variables
-@import "partials/base";
-@import "partials/grids";
+
+.row{
+	width: 100%;
+	border: 1px black solid;
+	display: flex;
+	background-color: gray;
+}
+
+
+@for $i from 1 through 12 {
+    .column-#{$i} { width: 100%/$i; border: 1px black solid; background-color: red; color: white; }
+}
